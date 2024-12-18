@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora IMC</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/style/style.css" />
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" />
+</head>
+<body>
+    <header>
+        <nav class="top-bar">
+            <ul class="social-list">
+                <li class="link" id="social-facebook" onclick="toSocialPage(1)"><span class="icon-social-facebook"></span></li>
+                <li class="link" id="social-linkedin" onclick="toSocialPage(2)"><span class="icon-social-linkedin"></span></li>
+                <li class="link" id="social-insta" onclick="toSocialPage(3)"><span class="icon-social-instagram"></span></li>
+                <li class="link" id="social-user" onclick="toSocialPage(4)"><span class="icon-user"></span></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <section id="calc-imc" class="box-calc">
+        <div class="imc-title">
+            <div class="imc-image">
+                <img src="./assets/img/pessoas.png" alt="Pessoas comendo" />
+            </div>
+            <h2>Calculadora de IMC</h2>
+        </div>
+        <form>
+            <label for="altura">Altura</label>
+            <input type="number" name="altura" id="altura" />
+            <label for="peso">Peso</label>
+            <input type="number" name="peso" id="peso" />
+        </form>
+        <div class="btn">
+            <button id="btnCalc">
+                Calcular
+            </button>
+        </div>
+    </section>
+
+    <section id="result-imc" class="box-calc">
+        <div id="imc-show"></div>
+
+        <div class="tabela-imc">
+            <h4>Confira as classificações</h4>
+
+            <div class="tabela">
+                <ul class="tabela-title">
+                    <li>IMC</li>
+                    <li>Classificação</li>
+                    <li>Obesidade</li>
+                </ul>
+                <ul>
+                    <li>Menor que 18,5</li>
+                    <li>Magreza</li>
+                    <li>0</li>
+                </ul>
+                <ul>
+                    <li>Entre 18,5 e 24,9</li>
+                    <li>Normal</li>
+                    <li>0</li>
+                </ul>
+                <ul>
+                    <li>Entre 25,0 e 29,9</li>
+                    <li>Sobrepeso</li>
+                    <li>I</li>
+                </ul>
+                <ul>
+                    <li>Entre 30,0 e 39,9</li>
+                    <li>Obesidade</li>
+                    <li>II</li>
+                </ul>
+                <ul>
+                    <li>Acima de 40,0</li>
+                    <li>Obesidade Grave</li>
+                    <li>III</li>
+                </ul>                
+            </div>
+        </div>
+
+        <div class="btn">
+            <button id="btnVoltar">
+                Voltar
+            </button>
+        </div>
+    </section>
+    
+</main>
+
+<footer>
+    <p>Desenvolvido por <a href="https://eltnas.github.io/">Elton C. Nascimento</a></p>
+</footer>
+<script src="assets/scripts/redeSocial.js"></script>
+<script src="assets/scripts/script.js"></script>
+</body>
+</html>

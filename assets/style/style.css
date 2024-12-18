@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/img.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  background: #f3efef;
+  width: 100%;
+  height: 2rem;
+}
+header nav {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul {
+  width: 400px;
+  height: 100%;
+  margin: auto auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul li {
+  width: 3rem;
+  height: 100%;
+  list-style: none;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul #social-facebook {
+  color: rgba(19, 18, 18, 0.4);
+}
+header nav ul #social-facebook:hover {
+  background: linear-gradient(135deg, #1877f2, #4b8bf5);
+  color: #FFF;
+  border-color: #1877f2;
+}
+header nav ul #social-linkedin {
+  color: rgba(19, 18, 18, 0.4);
+  /* Cor inicial do texto */
+}
+header nav ul #social-linkedin:hover {
+  background: #0077B5;
+  /* Cor oficial do LinkedIn no hover */
+  color: #FFF;
+  /* Cor do texto no hover */
+  border-color: #0077B5;
+  /* Cor da borda no hover */
+}
+header nav ul #social-insta {
+  color: rgba(19, 18, 18, 0.4);
+}
+header nav ul #social-insta:hover {
+  background: linear-gradient(135deg, #F09433, #E4405F, #C13584);
+  color: #FFF;
+  border-color: #C13584;
+}
+header nav ul #social-user {
+  color: rgba(19, 18, 18, 0.4);
+}
+header nav ul #social-user:hover {
+  background: linear-gradient(135deg, #4CAF50, #2E7D32);
+  color: #FFF;
+  border-color: #00A6ED;
+}
+
+main {
+  width: 100%;
+  height: calc(100% - 4rem);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .box-calc {
+  width: 100%;
+  max-width: 500px;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 2rem;
+  border-radius: 20px;
+}
+main #calc-imc {
+  display: block;
+}
+main #calc-imc .imc-title {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main #calc-imc .imc-title .imc-image {
+  width: 100px;
+  height: 100px;
+}
+main #calc-imc .imc-title .imc-image img {
+  width: 100%;
+  height: 100%;
+}
+main #calc-imc .imc-title h2 {
+  font-size: 1.8em;
+  color: #f3efef;
+  text-decoration: underline;
+  margin: 10px;
+}
+main #calc-imc form {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main #calc-imc form label {
+  font-size: 1.8em;
+  color: rgb(19, 18, 18);
+  margin-top: 10px;
+}
+main #calc-imc form input {
+  width: 75%;
+  font-size: 2em;
+  padding: 0 2rem;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+main #result-imc {
+  display: none;
+}
+main #result-imc .imc {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main #result-imc .imc h2 {
+  font-size: 1.8em;
+  color: rgb(19, 18, 18);
+  text-decoration: underline;
+  margin: 5px;
+}
+main #result-imc .imc p {
+  font-size: 1.8em;
+  color: rgb(19, 18, 18);
+  margin: 10px;
+}
+main #result-imc .imc .imc-sobrepeso {
+  color: #ffff00;
+}
+main #result-imc .tabela-imc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main #result-imc .tabela-imc h4 {
+  font-size: 1.8em;
+  color: rgb(19, 18, 18);
+  text-decoration: underline;
+  margin: 5px;
+}
+main #result-imc .tabela-imc .tabela {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+}
+main #result-imc .tabela-imc .tabela ul {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main #result-imc .tabela-imc .tabela ul li {
+  width: 125px;
+  list-style: none;
+  text-align: center;
+  margin-bottom: 5px;
+}
+main #result-imc .tabela-imc .tabela .tabela-title li {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+main .btn {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .btn button {
+  width: 75%;
+  height: 100%;
+  font-size: 1.5em;
+  border-radius: 20px;
+}
+
+footer {
+  width: 100%;
+  height: 2rem;
+  bottom: 0;
+  background: #f3efef;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  font-family: "Roboto", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1em;
+  color: rgba(19, 18, 18, 0.5);
+}
+footer p a {
+  color: rgba(19, 18, 18, 0.5);
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
