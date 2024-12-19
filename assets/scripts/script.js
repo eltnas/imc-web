@@ -39,10 +39,19 @@ btnCalc.addEventListener('click', () => {
     resultImc.style.display = 'block';
 
     // Atualiza o resultado no HTML.
-    imcShow.innerHTML = `
-        <h2>Seu IMC: <span class="imc-${classifica}">${calImc}</span></h2>
-        <p>Situação atual: <span class="imc-${classifica}">${classifica}</span></p>
-    `;
+    if(classifica === "grave"){
+        imcShow.innerHTML = `
+            <h2>Seu IMC: <span class="imc-${classifica}">${calImc}</span></h2>
+            <p>Situação atual: <span class="imc-${classifica}">Obesidade Grave</span></p>
+        `;
+    }
+    else{
+        imcShow.innerHTML = `
+            <h2>Seu IMC: <span class="imc-${classifica}">${calImc}</span></h2>
+            <p>Situação atual: <span class="imc-${classifica}">${classifica}</span></p>
+        `;
+    }
+
 });
 
 btnVolta.addEventListener('click', () => {
